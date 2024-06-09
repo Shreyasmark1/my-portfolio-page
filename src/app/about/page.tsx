@@ -7,11 +7,11 @@ const About = () => {
         <section className="relative z-20 max-w-2xl mx-auto my-12 7 lg:px-0">
             <PageHeader
                 title="About Me"
-                description="Hello 👋 I'm an adventurous software engineer from Mangalore, India. 
-                I'm passionate about building new products and learning new technology."
+                description="Hello 👋 I&apos;m an adventurous software engineer from Mangalore, India. 
+                I&apos;m passionate about building new products and learning new technology."
             />
 
-            <img src="/assets/images/about.jpg" className="relative z-30 w-full my-10 rounded-xl" />
+            {/* <img src="/assets/images/about.jpg" className="relative z-30 w-full my-10 rounded-xl" /> */}
 
             <h2 className="mb-2 text-2xl font-bold dark:text-neutral-200">Short Bio</h2>
             <p className="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg">
@@ -31,7 +31,7 @@ const About = () => {
             <h2 className="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">Experience</h2>
             <Experience />
             <h2 className="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6">
-                Let's Connect
+                Let&apos;s Connect
             </h2>
             <p className="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg">
                 If you want to stay up to date with my work be sure to{" "}
@@ -41,7 +41,7 @@ const About = () => {
                 send me an { }
                 <Link href="#_" className="text-indigo-600 underline">
                     email
-                </Link> and I'll be sure to get back to you.
+                </Link> and I&apos;ll be sure to get back to you.
             </p>
 
         </section >

@@ -1,3 +1,4 @@
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -6,10 +7,10 @@ export default function Home() {
         <div className="flex flex-col items-center md:flex-row">
           <div className="relative w-full md:w-1/2 ">
             <h1 className="mb-5 text-4xl font-bold leading-tight md:text-4xl lg:text-6xl dark:text-white">
-              Hello, I'm Shreyas.
+              Hello, I&apos;m Shreyas.
             </h1>
             <p className="mb-6 text-base text-neutral-600 dark:text-neutral-400">
-              I'm a software developer living in Mangalore, India. <br className="hidden lg:block" />I specialize in Springboot development and react ecosystem.
+              I&apos;m a software developer living in Mangalore, India. <br className="hidden lg:block" />I specialize in Springboot development and react ecosystem.
             </p>
             <p className="mb-2 font-semibold text-neutral-800 dark:text-neutral-200">I can help you out with:</p>
             <ul className="py-2 space-y-[3px] text-sm list-disc list-inside text-neutral-500 dark:text-neutral-400">
@@ -34,7 +35,13 @@ export default function Home() {
                 </span>
               </div>
               <div className="relative z-30 px-10">
-                <img src="/photo.png" className="relative z-30 w-full md:max-w-md mx-auto dark:-translate-y-0.5" />
+                <Image
+                  alt="Shreyas"
+                  src="/photo.png"
+                  className="relative z-30 w-full md:max-w-md mx-auto dark:-translate-y-0.5"
+                  width={100}
+                  height={100}
+                />
               </div>
               <div className="absolute bottom-0 right-0 z-20 w-full h-full lg:h-[420px] translate-x-0 -translate-y-px border border-dashed rounded-2xl bg-gradient-to-r dark:from-neutral-950 dark:via-black dark:to-neutral-950 from-white via-neutral-50 to-white border-neutral-300 dark:border-neutral-700"></div>
             </div>

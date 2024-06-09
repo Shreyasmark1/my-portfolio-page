@@ -14,7 +14,7 @@ const Experience = () => {
 
     return (
         <div className="px-5 py-10">
-            {experiences.map((experience) => (
+            {experiences.map((experience, index) => (
                 /* <ForEach collection="experiences" as="experience">
                 
                 <If condition="loop == 1 || loop == 2">
@@ -28,7 +28,7 @@ const Experience = () => {
                 </If>
             
             </ForEach> */
-                <div className="relative flex flex-col justify-start pl-12">
+                <div key={index} className="relative flex flex-col justify-start pl-12">
 
                     <div
                         className="absolute top-0 left-0 z-40 flex items-center justify-center -translate-x-1/2 bg-white border rounded-full dark:bg-neutral-950 w-14 h-14 border-neutral-300 dark:border-neutral-700">

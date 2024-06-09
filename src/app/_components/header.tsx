@@ -135,18 +135,21 @@ const Header = () => {
         }
     };
 
-    useEffect(() => {
-        if(resolvedTheme === 'dark'){
-            showNight(true)
-        } else {
-            showDay(true)
-        }
-    },[resolvedTheme])
-
-    useEffect(() => {
+    // useEffect(() => {
+    //     if(resolvedTheme === 'dark'){
+    //         showNight(true)
+    //     } else {
+    //         showDay(true)
+    //     }
+    // },[resolvedTheme, showDay, showNight])
+    const run = () => {
         stickyHeaderFuncionality();
         applyMenuItemClasses();
         evaluateHeaderPosition();
+    }
+    
+    useEffect(() => {
+        run()
     }, []);
 
 
