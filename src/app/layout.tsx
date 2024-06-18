@@ -4,6 +4,7 @@ import "./globals.css";
 import Footer from "./_components/footer";
 import Header from "./_components/header";
 import { ThemeProvider } from "@/components/theme-provider";
+import SquareLines from "@/components/square-lines";
 
 const inter = Inter({ subsets: ["latin"] });
 
